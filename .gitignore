@@ -1,0 +1,103 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+# Build Folders
+bin/
+obj/
+
+# Rider Project Files
+.idea/
+
+# User-specific files
+.vscode/
+*.swp
+*~
+.project
+.classpath
+.settings/
+
+# MacOS Generated Files
+.DS_Store
+
+# Windows Image File Cache
+Thumbs.db
+
+# VS Code directories
+.vscode/
+
+# VS specific files
+.vs/
+
+# Resharper files
+_ReSharper*/
+*.DotSettings.user
+
+# User-specific NuGet files
+*.nupkg
+*.snupkg
+.nuget/packages/
+.nuget/repository/
+
+# DotNet CLI Generated Files
+.dotnet/tools/
+
+# Logs and databases
+*.log
+*.sdf
+*.mdf
+*.ldf
+
+# NuGet Packages
+# The packages folder can be ignored because of the presence of `package-lock.json` or `packages.config`
+
+# npm package directories
+node_modules/
+
+# Compiled source
+*.dll
+*.exe
+*.so
+*.dylib
+*.pubxml
+*.pubxml.user
+*.js.map
+
+# IDE files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Coverage folders (auto-generated files)
+coverage/
+coverage/*
+
+# Entity Framework Migrations
+*.Designer.cs
+
+# Temporary files
+*.tmp
+*.temp
+# Visual Studio-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+obj/
+*.cache
+*.csproj.nuget.*
+*.csproj.nuget.g.props
+*.csproj.nuget.g.targets
+project.assets.json
+/obj/Debug/net8.0/*
+/obj/Debug/net8.0/*
+/obj/project.nuget.cache
+/obj/project.assets.json
+/wwwroot/uploads/PDFs
+/wwwroot/uploads/Images
+
+/wwwroot
+wwwroot

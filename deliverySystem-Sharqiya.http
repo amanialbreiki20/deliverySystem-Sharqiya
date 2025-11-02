@@ -1,0 +1,6 @@
+@deliverySystem_Sharqiya_HostAddress = http://localhost:5042
+
+GET {{deliverySystem_Sharqiya_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
