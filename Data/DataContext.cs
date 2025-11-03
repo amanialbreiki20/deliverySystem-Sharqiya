@@ -7,15 +7,26 @@ namespace deliverySystem_Sharqiya.Data
 {
     public class DataContext(DbContextOptions<DataContext> options) : DbContext(options)
     {
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            // Global query filter for the Course entity
+           
+            modelBuilder.Entity<Order>()
+               .HasOne(o => o.User)         
+               .WithMany(u => u.Orders)     
+               .HasForeignKey(o => o.UserId) 
+               .OnDelete(DeleteBehavior.Restrict);
 
+
+           modelBuilder.Entity<Order>()
+               .HasOne(o => o.Driver)           
+               .WithMany(d => d.Orders)         
+               .HasForeignKey(o => o.DriverId)  
+               .OnDelete(DeleteBehavior.Restrict);
         }
 
+        
         public DbSet<User> Users { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<DailyDistanceTracker> DailyDistanceTrackers { get; set; }

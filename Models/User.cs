@@ -17,6 +17,9 @@
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
         public DateTime LastLoginAt { get; set; }
+
+        public ICollection<Order> Orders { get; set; }
+
     }
 
     public enum UserType
